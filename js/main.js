@@ -1,25 +1,5 @@
-var videoElement = document.querySelector('video');
+const textData = document.getElementsByClassName('textSec');
 
-videoElement.addEventListener('timeupdate', setTime);
+const curVidTime = document.getElementById('vid').currentTime;
 
-function setTime() {
-    var minutes = Math.floor(videoElement.currentTime / 60);
-    var seconds = Math.floor(videoElement.currentTime - minutes * 60);
-    var minuteValue;
-    var secondValue;
-  
-    if (minutes < 10) {
-      minuteValue = '0' + minutes;
-    } else {
-      minuteValue = minutes;
-    }
-  
-    if (seconds < 10) {
-      secondValue = '0' + seconds;
-    } else {
-      secondValue = seconds;
-    }
-    var mediaTime = minuteValue + ':' + secondValue;
-    timer.textContent = mediaTime;
-} 
-
+console.log(curVidTime);
