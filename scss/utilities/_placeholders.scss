@@ -1,0 +1,51 @@
+
+// Images
+
+%blocked {
+    display: block;
+}
+
+
+// Headlines
+
+%align-left {
+    margin: em(12);
+    text-align: left;
+}
+
+%center {
+    margin: 0 auto;
+}
+
+// nav items
+
+%nav {
+    margin: em(6) auto;
+    & a {
+        text-decoration: none;
+        width: 100%;
+        padding: em(12);
+        display: block;
+    }
+    & a:hover {
+        background-color: $color-primary;
+        color: white;
+        border-radius: em(8);
+    }
+    @include mq($large) {
+        display: inline-block;
+        align-items: center;
+
+    }
+}
+
+// Flexbox
+
+%flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    @extend %center;
+}

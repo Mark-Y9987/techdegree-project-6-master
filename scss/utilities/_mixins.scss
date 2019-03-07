@@ -1,0 +1,34 @@
+
+// Media Queries
+
+@mixin mq($large) {
+    @media (min-width: $large){
+        @content;
+    }
+}
+
+
+
+// General Grid Layout
+
+@mixin grid__col {
+    @each $number, $color in $grid-colors {
+        .grid__col--#{$number} {
+           display: block;
+           margin: 0 auto;
+           @include mq($large) {
+            max-width: 90%;
+        }
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+

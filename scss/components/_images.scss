@@ -1,0 +1,25 @@
+
+
+.img--logo {
+    @extend %blocked;
+    margin: em(12) auto;
+    @media (min-width: 769px){
+        margin: em(12) em(12);
+    }
+}
+
+.img--avatar{
+    @extend %blocked;
+    margin: 0 auto;
+    padding: em(24);
+}
+
+.img--frame{
+    @extend %blocked;
+    border: solid em(2) $color-border;
+    padding: em(12);
+    margin: em(24) auto;
+}
+
+
+

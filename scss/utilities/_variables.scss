@@ -1,0 +1,38 @@
+// Fonts
+
+$font-family: 'Krub', sans-serif;
+
+
+// Colors
+
+$color-background: white;
+
+$color-primary: #57DBB7;
+$color-secondary: #fc9c2e;
+$color-highlight: #5DC57A;
+
+$color-text: #383838;
+$color-border: #e2e2e2;
+
+// Color Maps
+
+$btn-colors: (
+    default: #68D9F1,
+    success: #5DC57A,
+    error  : #DD8B8B,
+    warning: #ED8257,
+    info   : #856EA2
+);
+
+$grid-colors: (
+    3: #E3BCF1,
+    4: #7DDFF4,
+);
+
+// Breakpoints
+
+$large: 769px;
+
+// em conversion function default
+
+$browser-context: 16; // Default
