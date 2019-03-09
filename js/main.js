@@ -2,6 +2,7 @@
 
 const vid = document.querySelector('video');
 const captionID = true;
+
 const caption = [
 	document.getElementById('caption-0'),
 	document.getElementById('caption-1'),
